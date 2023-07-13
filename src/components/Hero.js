@@ -5,8 +5,8 @@ import hero from '../assets/images/hero.png';
 function Hero() {
 
   const social_media = [
-    'logo-linkedin',
-    'logo-instagram',
+    {logo: 'logo-linkedin', url: 'https://www.linkedin.com/in/tejas-meshram-922a23143'},
+    {logo: 'logo-instagram', url: 'https://www.instagram.com/tejasmeshram0'}
   ];
 
   return (
@@ -26,12 +26,12 @@ function Hero() {
                 My Name is <span>Tejas Meshram</span> 
               </h1>
               <h4 className='md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600'>Web Developer</h4>
-              <button className='btn-primary mt-8'>Contact Me</button>
+              <button className='btn-primary mt-8'><a href="#contact">Contact Me</a></button>
               <div className='mt-8 text-3xl flex items-center md:justify-start justify-center gap-5'>
                 {
                   social_media?.map(icon => (
                     <div key={icon} className='text-gray-600 hover:text-white cursor-pointer'>
-                      <ion-icon name={icon}></ion-icon>
+                      <a href={icon.url} target='_blank' rel='noreferrer'><ion-icon name={icon.logo}></ion-icon></a>
                     </div>
                   ))
                 }

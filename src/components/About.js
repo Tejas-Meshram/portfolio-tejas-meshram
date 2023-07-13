@@ -21,10 +21,7 @@ function About() {
             <div className="p-2">
               <div className="text-gray-300 my-3">
                 <p className="text-justify leading-7 w-11/12 mx-auto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                  ratione quibusdam doloribus pariatur consequuntur sint.
-                  Reprehenderit cupiditate possimus facere quasi voluptatem?
+                Software Engineer with 3+ years of experience helping clients maintain smooth operations. Finding effective solutions to technical issues through troubleshooting and issue analysis. Hands-on experience in building React Components.
                 </p>
                 <div className="flex mt-10 items-center gap-7">
                   {info.map((content) => (
